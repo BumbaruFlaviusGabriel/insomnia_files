@@ -1,0 +1,27 @@
+mutation{
+	employee(input:{
+		age: 24
+		gender: "Male"
+		name:"Danny"
+		location:{
+			longitude:5
+			latitude:7
+			city:"TM"
+		}
+	})
+	
+	
+	{
+		age
+		name
+		gender
+		
+		location{
+			city
+		}
+	}
+	
+	
+}
+
+====================================================

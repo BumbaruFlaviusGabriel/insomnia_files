@@ -1,0 +1,25 @@
+mutation{
+	company(input:{
+		name:"Atoss"
+		Employees:{
+			age:22
+			name:"Flavius"
+			gender:"Male"
+			location:{
+				longitude:7
+				latitude:9
+				city:"TM"
+			}
+		}
+		location:{
+			city:"TM2"
+			longitude:3
+			latitude:4
+		}
+	})
+	{
+		name
+		id
+		
+	}
+}

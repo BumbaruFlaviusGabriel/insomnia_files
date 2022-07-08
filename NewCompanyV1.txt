@@ -1,0 +1,12 @@
+query($name:String!){
+	company(name:$name){
+	name
+		id
+}}
+
+
+==============================
+{
+	"name": "Atoss1"
+}
+

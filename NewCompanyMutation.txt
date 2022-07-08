@@ -1,0 +1,39 @@
+mutation($name:String!,$age:Int!,$name_empl:String!,
+	$gender:String!,$long:Int!,$lat:Int!,$city:String!,
+$city_loc:String!,$long_loc:Int!,$lat_loc:Int!){
+	company(input:{
+		name: $name
+		Employees:{
+			age:$age
+			name:$name_empl
+			gender:$gender
+			location:{
+				longitude:$long
+				latitude:$lat
+				city:$city
+			}
+		}
+		location:{
+			city:$city_loc
+			longitude:$long_loc
+			latitude:$lat_loc
+		}
+}){
+	name
+		id
+}
+}
+
+===============================================================
+{
+	"name": "Atoss1",
+	"age": 28,
+	"name_empl": "Gabriel",
+	"gender": "Male",
+	"long": 7,
+	"lat": 9,
+	"city": "TM",
+	"city_loc": "TM2",
+	"long_loc": 11,
+	"lat_loc": 13
+}
